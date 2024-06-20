@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship Applicants</title>
+</head>
+<body>
+    <h1>Internship Applicants</h1>
+    <form method="POST" action="insert.php">
+    <p><b>Name</b></p>
+    <input type="text" name="name" required>
+    <br>
+    <p><b>Email</b></p>
+    <input type="email" name="email" required>
+    <br>
+    <p><b>Gender</b></p>
+    <p>
+        <input type="radio" name="sex" required value="Male" >Male
+        <input type="radio" name="sex" required value="Female">Female
+    </p>
+    <br>
+    <label for="phone">Phone number</label><br><br>
+    <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"name="phone" required>
+    <br>
+    <p><b>Birthday</b></p>
+    <input type="date" id="Birthday" value="Birthday" name="birthday" required>
+    <br>
+    <p><b>Job Field</b></p>
+      <input list="Jobs" name="job" required>
+      <datalist id="Jobs">
+        <option value="Software Engineer">Software Engineer</option>
+        <option value="Network Engineer">Network Engineer</option>
+        <option value="Graphic Desinger">Graphic Desinger</option> 
+      </datalist>  
+      <br> 
+      <br> 
+    <input type="submit">
+    </form>
+</body>
+</html>
